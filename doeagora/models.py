@@ -8,7 +8,7 @@ class Doador(models.Model):
   
 class Instituicao(models.Model):
   desc_benef = models.CharField(max_length=200, verbose_name="descrição do beneficiário")
-  nome = models.CharField(max_lenght=40)
+  nome = models.CharField(max_length=40)
   data_ultima_doacao = models.DateField(verbose_name="data da última doação")
   
 class Produto(models.Model):
