@@ -6,13 +6,23 @@ class Doador(models.Model):
   endereco = models.CharField(max_length=100, verbose_name="endereço" )
   cpf = models.CharField(max_length=11, verbose_name="CPF")
   
+  def __str__(self):
+    return self.nome
+  
 class Instituicao(models.Model):
   desc_benef = models.CharField(max_length=200, verbose_name="descrição do beneficiário")
   nome = models.CharField(max_length=40)
   data_ultima_doacao = models.DateField(verbose_name="data da última doação")
   
+  def __str__(self):
+    return self.nome
+  
+  
 class Produto(models.Model):
   descricao = models.CharField(max_length=40, verbose_name="descrição")
+  
+  def __str__(self):
+    return self.descricao
   
 
 class Beneficiario(models.Model):
@@ -21,6 +31,9 @@ class Beneficiario(models.Model):
   endereco = models.CharField(max_length=100, verbose_name="endereço" )
   cpf = models.CharField(max_length=11, verbose_name="CPF")
   instituicao = models.ForeignKey(Instituicao, verbose_name="instituição", on_delete=models.PROTECT)
+  
+  def __str__(self):
+    return self.nome
  
 
 class Doacao(models.Model):
