@@ -1,11 +1,9 @@
 body{
     background: url(img/foto_inicial);
     line-height: 1.0;
-    width: 150%;
+    width: 160%;
     margin: auto;
     font-family: OCR A Std, monospace; 
-    color: white;
-
   }
   
   .cadastros{
@@ -16,7 +14,7 @@ body{
   }
   
   h1 {
-    color: purple;
+    color: white;
     width: 100%;
     text-align: center;
     text-indent: 10px;
