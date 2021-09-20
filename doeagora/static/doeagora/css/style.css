@@ -1,4 +1,136 @@
-h1 {
-    color: red;
+body{
+    background: url(img/foto_inicial);
+    line-height: 1.0;
+    width: 90%;
+    margin: auto;
+    font-family: OCR A Std, monospace; 
+  }
+  
+  .cadastros{
+    background: url(img/foto_inicial);
+    text-align: center;
+    font: outline;
+  
+  }
+  
+  h1 {
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-indent: 10px;
+    margin: 20px;
+    font-family: fangsong;
+    background: #000000bf;
+    font-size: 180%;
+  
+  }
+  
+  .sos {
+    background: #0000006b;
+    color: white;
+    width: 100%;
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .social {
+    background: url(img/fim);
     
-}
+  }
+  
+  .doadores {
+    background: url(img/generosidade);
+    background-size: 1400px 1200px;
+    font-weight: 900;
+    color: black;
+    text-align: left;
+    font-family: OCR A Std, monospace;
+    // OK
+  }
+  .instituicao {
+    background: url(img/generosidade);
+    background-size: 1400px 1200px;
+    font-weight: 900;
+    color: black;
+    text-align: left;
+    font-family: OCR A Std, monospace;
+    // Ok
+  }
+  
+  .beneficiario{
+    background: url(img/generosidade);
+    background-size: 1400px 1200px;
+    font-weight: 900;
+    color: black;
+    text-align: left;
+    font-family: OCR A Std, monospace;
+    // OK
+  }
+  
+  .link1 {
+    color: white;
+    font-size: 90%;
+    background: #0000006b
+  }
+  
+  .link2 {
+  color: white;
+  font-size: 100%;
+  background: #24ff9a6b;
+  font-family: OCR A Std, monospace; 
+  }
+  
+  .link3 {
+  
+  color: white;
+  font-size: 100%;
+  font-family: cursive; 
+  background: #000000fa;
+  
+  }
+  
+  .cd{
+    color: white;
+    width: 100%;
+    background: #0000006b;
+    text-align: center;
+    font-size: 130%;
+  
+  }
+  .left{
+    text-align: left;
+  }
+  
+  .fim{
+    color: white;
+    background: #000000bd;
+    text-align: center;
+    margin: auto;
+    position:absolute;
+    top: 300px;
+    right:530px ;
+  }
+  
+  .botao  {
+  top:20px;
+  left:50px;
+  margin:5px;
+  }
+  
+  .botao a, .botao a:visited {  
+  font: bold 12px/24px arial, helvetica, sans-aerif;	
+  padding:0px;
+  text-decoration: none;
+  text-align:center;	
+  color:#fff;
+  background:blue url('botao_link.gif') no-repeat center center;	
+  width:120px;  
+  height:24px;	
+  display:block;	
+  }
+  
+  .botao a:hover { 
+  background: rgb(156, 144, 87) url('botao_hover.gif') no-repeat 
+  center center;
+  color:rgb(238, 185, 12);
+  }
+  
