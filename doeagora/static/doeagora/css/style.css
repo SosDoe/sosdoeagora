@@ -38,26 +38,26 @@ body{
   }
   
   .doadores {
-    background: url(img/generosidade.jpeg);
+    background: url(/static/doeagora/img/generosidade.jpeg);
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
     text-align: left;
     font-family: OCR A Std, monospace;
-    // OK
+    
   }
   .instituicao {
-    background: url(img/generosidade.jpeg);
+    background: url(/static/doeagora/img/generosidade.jpeg);
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
     text-align: left;
     font-family: OCR A Std, monospace;
-    // Ok
+    
   }
   
   .beneficiario{
-    background: url(img/generosidade.jpeg);
+    background: url(/static/doeagora/img/generosidade.jpeg);
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
