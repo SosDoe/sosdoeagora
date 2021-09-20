@@ -7,3 +7,6 @@ class IndexView(generic.TemplateView):
 class SobreCadastrosView(generic.TemplateView):
     template_name = 'doeagora/sobrecadastros.html'
 
+class SosDoeInfoView(generic.TemplateView):
+    template_name = 'doeagora/sosdoeinfo.html'
+
