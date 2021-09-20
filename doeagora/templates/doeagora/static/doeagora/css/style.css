@@ -1,9 +1,11 @@
 body{
     background: url(img/foto_inicial);
     line-height: 1.0;
-    width: 90%;
+    width: 150%;
     margin: auto;
     font-family: OCR A Std, monospace; 
+    color: white;
+
   }
   
   .cadastros{
