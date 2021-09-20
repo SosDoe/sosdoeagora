@@ -1,5 +1,5 @@
 body{
-    background: url(img/foto_inicial);
+    background: url(/static/doeagora/img/foto_inicial.jpeg);
     line-height: 1.0;
     width: 90%;
     margin: auto;
@@ -7,7 +7,7 @@ body{
   }
   
   .cadastros{
-    background: url(img/foto_inicial);
+    background: url(img/foto_inicial.jpeg);
     text-align: center;
     font: outline;
   
