@@ -19,4 +19,7 @@ class CadastroDoadoresView(generic.TemplateView):
 class CadastroInstituicaoView(generic.TemplateView):
     template_name = 'doeagora/c.instituição.html'
 
+class FimParaBeneficiadosView(generic.TemplateView):
+    template_name = 'doeagora/fim p beneficiados.html'
+
 
