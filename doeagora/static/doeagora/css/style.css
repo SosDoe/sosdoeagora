@@ -63,7 +63,11 @@ body{
     color: black;
     text-align: left;
     font-family: OCR A Std, monospace;
-    // OK
+   
+  }
+
+  .tabelas{
+    color: black;
   }
   
   .link1 {
