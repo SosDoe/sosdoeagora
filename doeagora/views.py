@@ -15,7 +15,7 @@ class CadastroBeneficiariosView(generic.CreateView):
     template_name = 'doeagora/c.beneficiario.html'
     model = models.Beneficiario
     fields = ("nome", "telefone", "endereco", "cpf", "instituicao")
-    sucess_url = reverse_lazy("doeagora:index")
+    success_url = reverse_lazy("doeagora:index")
 
 class CadastroDoadoresView(generic.TemplateView):
     template_name = 'doeagora/c.doadores.html'
