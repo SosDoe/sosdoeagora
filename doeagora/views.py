@@ -13,6 +13,7 @@ class SosDoeInfoView(generic.TemplateView):
 class CadastroBeneficiariosView(generic.CreateView):
     template_name = 'doeagora/c.beneficiario.html'
     model = models.Beneficiario
+    fields = ("nome", "telefone", "endereco", "cpf", "instituicao")
 
 class CadastroDoadoresView(generic.TemplateView):
     template_name = 'doeagora/c.doadores.html'
