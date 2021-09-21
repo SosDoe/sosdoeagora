@@ -12,4 +12,6 @@ urlpatterns = [
     path('cadastro-instituição', views.CadastroInstituicaoView.as_view(), name='c.instituição'),
     path('fim-para-beneficiados', views.FimParaBeneficiadosView.as_view(), name='fim p beneficiados'),
     path('ver-beneficiario/<int:pk>', views.VerBeneficiarioView.as_view(), name='ver_beneficiario'),
+    path('ver-instituicao/<int:pk>', views.VerInstituicaoView.as_view(), name='ver_instituicao'),
+    path('ver-doador/<int:pk>', views.VerDoadorView.as_view(), name='ver_doador'),
 ]
