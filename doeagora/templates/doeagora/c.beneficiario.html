@@ -18,8 +18,8 @@
 <form action="" method="post">
     {% csrf_token %}
     {{ form }}
-    
-    <a input type="submit" value="Enviar" href="{%url "doeagora:fim p beneficiados" %}"></a>
+    <input type="submit" value="Enviar">
+    <a href="{%url "doeagora:fim p beneficiados" %}"></a>
 </form>
     
 <p><a href="{% url "doeagora:index" %}" class="link1"> Volte a página inicial </a></p>
