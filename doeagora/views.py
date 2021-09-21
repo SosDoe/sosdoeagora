@@ -29,5 +29,6 @@ class FimParaBeneficiadosView(generic.TemplateView):
 class VerBeneficiarioView(generic.DetailView):
     template_name = 'doeagora/verbeneficiario.html'
     model = models.Beneficiario
+    context_name = 'beneficiario'
 
 
