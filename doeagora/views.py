@@ -10,8 +10,9 @@ class SobreCadastrosView(generic.TemplateView):
 class SosDoeInfoView(generic.TemplateView):
     template_name = 'doeagora/sosdoeinfo.html'
 
-class CadastroBeneficiariosView(generic.TemplateView):
+class CadastroBeneficiariosView(generic.CreateView):
     template_name = 'doeagora/c.beneficiario.html'
+    model = models.Beneficiario
 
 class CadastroDoadoresView(generic.TemplateView):
     template_name = 'doeagora/c.doadores.html'
