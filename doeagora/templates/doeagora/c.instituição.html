@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  </head>
+  <hr>
+  <body class="instituicao">
+     <div class="container">
+      <h2>Cadastro de instituições<cadastro></cadastro></h2>
+      <hr>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+     <p class="botao">
+      <a href="fim.html" title="Finalizar cadastro">Enviar</a>
+      </p>
+      <hr>
+      
+<p><a href="index.html" class="link1">Volte a página inicial</a></p>
+<p><a href="sobrecadastros.html" class="link1">Volte a página de cadastros</a></p>
