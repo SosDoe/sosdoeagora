@@ -25,5 +25,9 @@ class CadastroInstituicaoView(generic.TemplateView):
 
 class FimParaBeneficiadosView(generic.TemplateView):
     template_name = 'doeagora/fim p beneficiados.html'
+ 
+class VerBeneficiarioView(generic.DetailView):
+    template_name = 'doeagora/verbeneficiario.html'
+    model = models.Beneficiario
 
 
