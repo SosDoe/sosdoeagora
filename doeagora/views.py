@@ -27,7 +27,7 @@ class CadastroDoadoresView(generic.TemplateView):
 class CadastroInstituicaoView(generic.TemplateView):
     template_name = 'doeagora/c.instituição.html'
     model = models.Instituicao
-    fields = ("nome", "email", "telefone", "bairro", "endereco", )
+    fields = ("nome", "email", "telefone", "bairro", "endereco" )
     success_url = reverse_lazy("doeagora:index")
 
 
