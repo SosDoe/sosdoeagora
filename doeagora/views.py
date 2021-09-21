@@ -38,5 +38,13 @@ class VerBeneficiarioView(generic.DetailView):
     template_name = 'doeagora/verbeneficiario.html'
     model = models.Beneficiario
     context_name = 'beneficiario'
+    
+class VerInstituicaoView(generic.DetailView):
+    template_name = 'doeagora/verinstituicao.html'
+    model = models.Instituicao
+    context_name = 'instituicao'
 
-
+class VerDoadorView(generic.DetailView):
+    template_name = 'doeagora/verdoador.html'
+    model = models.Doador
+    context_name = 'doador'
