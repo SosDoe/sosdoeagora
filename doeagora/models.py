@@ -5,7 +5,9 @@ class Doador(models.Model):
   telefone = models.CharField(max_length=11)
   endereco = models.CharField(max_length=100, verbose_name="endereço" )
   cpf = models.CharField(max_length=11, verbose_name="CPF")
-  
+  email = models.CharField(max_length=40)
+  instituicao = models.CharField(max_length=40, verbose_name="instituição")
+
   class Meta:
 	  verbose_name = "Doador"
 	  verbose_name_plural = "Doadores"
