@@ -16,7 +16,7 @@ class Doador(models.Model):
   
 class Instituicao(models.Model):
   nome = models.CharField(max_length=40)
-  data_ultima_doacao = models.DateField(verbose_name="data da última doação")
+  data_ultima_doacao = models.DateField(verbose_name="data da última doação", null=True, blank=True)
   endereco = models.CharField(max_length=100, verbose_name="endereço" )
   email = models.CharField(max_length=40)
   telefone = models.CharField(max_length=11)
