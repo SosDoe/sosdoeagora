@@ -6,7 +6,6 @@ class Doador(models.Model):
   endereco = models.CharField(max_length=100, verbose_name="endereço" )
   cpf = models.CharField(max_length=11, verbose_name="CPF")
   email = models.CharField(max_length=40)
-  instituicao = models.CharField(max_length=40, verbose_name="instituição")
 
   class Meta:
 	  verbose_name = "Doador"
@@ -16,10 +15,8 @@ class Doador(models.Model):
     return self.nome
   
 class Instituicao(models.Model):
-  desc_benef = models.CharField(max_length=200, verbose_name="descrição do beneficiário")
   nome = models.CharField(max_length=40)
   data_ultima_doacao = models.DateField(verbose_name="data da última doação")
-  bairro = models.CharField(max_length=100)
   endereco = models.CharField(max_length=100, verbose_name="endereço" )
   email = models.CharField(max_length=40)
   telefone = models.CharField(max_length=11)
