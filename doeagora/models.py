@@ -19,6 +19,10 @@ class Instituicao(models.Model):
   desc_benef = models.CharField(max_length=200, verbose_name="descrição do beneficiário")
   nome = models.CharField(max_length=40)
   data_ultima_doacao = models.DateField(verbose_name="data da última doação")
+  bairro = models.CharField(max_length=100)
+  endereco = models.CharField(max_length=100, verbose_name="endereço" )
+  email = models.CharField(max_length=40)
+  telefone = models.CharField(max_length=11)
   
   class Meta:
 	  verbose_name = "Instituição"
