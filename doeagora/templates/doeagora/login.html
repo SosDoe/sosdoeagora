@@ -1,1 +1,23 @@
-<h1>Página de Login</h1>
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="{% static 'doeagora/css/style.css' %}">
+   <script src="script.js"></script>  
+  <head>
+  <body class="login">
+    <h1 class="sos">SOS-DoeAgora</h1>
+    
+    <h1>
+    <hr>
+    <div>
+          <label for="nome"><span style="color:red"></span>Digite seu email: </label>
+         <input class="form-control" type="text" placeholder="Exemplo: seunome@gmail.com" name="nome">
+        </div>
+    <hr>
+    </h1>
+    <h3> 
+        <p class="fim2"><a href="{% url "doeagora:index" %}" class="link1"> Volte a página inicial </a></p>
+    </h3>
+    
+  </body>
+</html>

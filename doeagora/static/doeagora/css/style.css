@@ -66,6 +66,14 @@ body{
    
   }
 
+  .login{ 
+    background: url(/static/doeagora/img/doacao.jpeg);
+    background-size: 1400px 1200px;
+    font-weight: 900;
+    color: black;
+    text-align: left;
+    font-family: OCR A Std, monospace;
+  }
   .tabelas{
     color: black;
   }
