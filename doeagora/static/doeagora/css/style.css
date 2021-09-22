@@ -73,7 +73,8 @@ body{
   .link1 {
     color: white;
     font-size: 90%;
-    background: #0000006b
+    background: #0000006b;
+    text-align: center;
   }
   
   .link2 {
