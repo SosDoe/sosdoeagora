@@ -12,7 +12,7 @@ urlpatterns = [
     path('cadastro-instituição', views.CadastroInstituicaoView.as_view(), name='c.instituição'),
     path('fim-cadastro', views.FimParaBeneficiadosView.as_view(), name='fim_beneficiados'),
     path('ver-beneficiario/<int:pk>', views.VerBeneficiarioView.as_view(), name='ver_beneficiario'),
-    path('ver-instituição/<int:pk>', views.VerInstituicaoView.as_view(), name='ver_instituição'),
+    path('ver-instituicao/<int:pk>', views.VerInstituicaoView.as_view(), name='ver_instituicao'),
     path('ver-doadores/<int:pk>', views.VerDoadorView.as_view(), name='ver_doadores'),
     path('login', views.LoginView.as_view(), name='login'),
 ]
