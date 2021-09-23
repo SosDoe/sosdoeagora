@@ -37,9 +37,7 @@ class FimParaBeneficiadosView(generic.TemplateView):
 
 class LoginView(generic.TemplateView):
     template_name = 'doeagora/login.html'
-    model = models.login
-    fields = ("email")
-    success_url = reverse_lazy("doeagora:doacao1")
+    
  
 class VerBeneficiarioView(generic.DetailView):
     template_name = 'doeagora/verbeneficiario.html'
