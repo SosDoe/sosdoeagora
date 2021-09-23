@@ -31,7 +31,7 @@ class CadastroInstituicaoView(generic.CreateView):
     success_url = reverse_lazy("doeagora:fim_beneficiados")
     
     
-class DoacoesView(generic.CreateView):
+class DoacaoView(generic.CreateView):
     template_name = 'doeagora/doacao.html'
     model = models.Doacao
     fields = ("doacao", "quantidade", "data", "instituicao" )
