@@ -66,8 +66,4 @@ class Doacao(models.Model):
 	  verbose_name = "Doação"
 	  verbose_name_plural = "Doações"
 
-class Login(models.Model):
-  email = models.CharField(max_length=40)
 
-  def __str__(self):
-    return self.nome
