@@ -1,1 +1,3 @@
-
+{% for instituicao in instituicoes %}
+<a href="{% url 'doeagora:ver_instituicao'  instituicao.pk %}">{{ instituicao }}</a>
+{% endfor %}
