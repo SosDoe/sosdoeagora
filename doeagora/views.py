@@ -60,3 +60,18 @@ class VerDoadorView(generic.DetailView):
     template_name = 'doeagora/verdoador.html'
     model = models.Doador
     context_name = 'doador'
+    
+class VerListagemBeneficiarioView(generic.ListView):
+    template_name = 'doeagora/verlistagembeneficiario.html'
+    model = models.Beneficiario
+    context_object_name = 'beneficiarios'
+    
+class VerListagemDoadorView(generic.ListView):
+    template_name = 'doeagora/verlistagemdoador.html'
+    model = models.Doador
+    context_object_name = 'doadores'
+    
+class VerListagemInstituicaoView(generic.ListView):
+    template_name = 'doeagora/verlistageminstituicao.html'
+    model = models.Instituicao
+    context_object_name = 'instituicoes'
