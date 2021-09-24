@@ -17,4 +17,7 @@ urlpatterns = [
     path('login', views.LoginView.as_view(), name='login'),
     path('doacao', views.DoacaoView.as_view(), name='doacao'),
     path('listagem', views.ListagemView.as_view(), name='listagem'),
+    path('listagem-doadores', views.VerListagemDoadorView.as_view(), name='listagem_doadores'),
+    path('listagem-beneficiarios', views.VerListagemBeneficiarioView.as_view(), name='listagem_beneficiarios'),
+    path('listagem-instituicoes', views.VerListagemInstituicaoView.as_view(), name='listagem_instituicoes'),
 ]
