@@ -78,3 +78,11 @@ class VerListagemInstituicaoView(generic.ListView):
     template_name = 'doeagora/verlistageminstituicao.html'
     model = models.Instituicao
     context_object_name = 'instituicoes'
+    
+class EditarBeneficiarioView(generic.UpdateView):
+    template_name = 'doeagora/c.beneficiario.html'
+    model = models.Beneficiario
+    fields = ("nome", "telefone", "endereco", "cpf", "instituicao")
+    success_url = reverse_lazy("doeagora:fim_beneficiados")
+                             
+                       
