@@ -1,0 +1,3 @@
+{% for beneficiario in beneficiarios %}
+<a href="{% url 'ver_beneficiario'  beneficiario.pk %}">{{ beneficiario }}</a>
+{% endfor %}
