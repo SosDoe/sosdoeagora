@@ -84,5 +84,15 @@ class EditarBeneficiarioView(generic.UpdateView):
     model = models.Beneficiario
     fields = ("nome", "telefone", "endereco", "cpf", "instituicao")
     success_url = reverse_lazy("doeagora:fim_beneficiados")
-                             
-                       
+  
+class EditarInstituicaoView(generic.UpdateView):
+    template_name = 'doeagora/c.instituicao.html'
+    model = models.Instituicao
+    fields = ("nome", "email", "telefone", "endereco" )
+    success_url = reverse_lazy("doeagora:fim_beneficiados")
+ 
+class EditarDoadorView(generic.UpdateView):
+    template_name = 'doeagora/c.doadores.html'
+    model = models.Doador
+    fields = ("nome", "telefone", "email", "endereco", "cpf")
+    success_url = reverse_lazy("doeagora:fim_beneficiados")
