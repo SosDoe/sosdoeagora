@@ -1,3 +1,12 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="{% static 'doeagora/css/style.css' %}"> 
+   <script src="script.js"></script>
+  <head>
+  <body>
+    <h1 class="sos">SOS-Doe Agora</h1>
+
 {% for doador in doadores %}
 <p><a href="{% url 'doeagora:ver_doador'  doador.pk %}">{{ doador }}</a></p>
 {% endfor %}
