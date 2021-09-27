@@ -12,7 +12,9 @@ body{
     text-align: center;
     font: outline;
   }
-  
+  .listagens{
+    color: white;
+  }
   h1 {
     color: white;
     width: 100%;
