@@ -1,3 +1,5 @@
 {% for instituicao in instituicoes %}
 <p><a href="{% url 'doeagora:ver_instituicao'  instituicao.pk %}">{{ instituicao }}</a></p>
 {% endfor %}
+
+<p><a href="{% url "doeagora:index" %}" class="link1"> Volte a página inicial </a></p>
