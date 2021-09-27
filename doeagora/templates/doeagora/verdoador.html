@@ -1,3 +1,12 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="{% static 'doeagora/css/style.css' %}"> 
+   <script src="script.js"></script>
+  <head>
+  <body>
+    <h1 class="sos">SOS-Doe Agora</h1>
+    
 {{ doador.nome }} ---> {{ doador.cpf }}
 <a href="{% url 'doeagora:editar_doador' doador.pk %}"> Editar </a>
 <a href="{% url 'doeagora:excluir_doador' doador.pk %}"> Excluir </a>
