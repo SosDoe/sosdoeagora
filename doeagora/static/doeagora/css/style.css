@@ -7,6 +7,14 @@ body{
     color: white;
   }
   
+  .editlist {
+    color:white;
+    text-align: center;
+    background: #0000006b;
+    width: 80%;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
   .cadastros{
     background: url(img/foto_inicial.jpeg);
     text-align: center;
