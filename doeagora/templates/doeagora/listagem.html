@@ -7,21 +7,21 @@
   <body>
     <h1> Página de Listagens </h1>
     
-    <h2 class="sosdoeinfo">
+    <h2 class="cd">
     <hr>
-    <p>Instituições: </p>
-    <p><a href="{% url "doeagora:verlistageminstituicao" %}" class="link2"> Ver instituições participantes </a><br></p> 
-    <hr>
-
-
-    <p>Doadores: </p>
-    <p><a href="{% url "doeagora:verlistagemdoador" %}" class="link2"> Ver doadores participantes </a><br></p>
+      <p>Instituições: </p>
+      <p><a href="{% url "doeagora:verlistageminstituicao" %}" class="link2"> Ver instituições participantes </a><br></p> 
     <hr>
 
-    <p>Beneficiários: </p>
-    <p><a href="{% url "doeagora:verlistagembeneficiario" %}" class="link2"> Ver beneficiários participantes </a><br></p>
+
+      <p>Doadores: </p>
+      <p><a href="{% url "doeagora:verlistagemdoador" %}" class="link2"> Ver doadores participantes </a><br></p>
+    <hr>
+
+      <p>Beneficiários: </p>
+      <p><a href="{% url "doeagora:verlistagembeneficiario" %}" class="link2"> Ver beneficiários participantes </a><br></p>
+    <hr>
     
-    <hr>
     </h2>
 <p class="left"><a href="{% url "doeagora:index" %}" class="link3"> Volte a página inicial </a></p>
   </body>
