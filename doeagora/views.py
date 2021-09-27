@@ -96,3 +96,18 @@ class EditarDoadorView(generic.UpdateView):
     model = models.Doador
     fields = ("nome", "telefone", "email", "endereco", "cpf")
     success_url = reverse_lazy("doeagora:verlistagemdoador")
+
+class ExcluirBeneficiarioView(generic.DeleteView):
+    template_name = 'doeagora/excluir.html'
+    model = models.Beneficiario
+    success_url = reverse_lazy("doeagora:verlistagembeneficiario")
+  
+class ExcluirInstituicaoView(generic.DeleteView):
+    template_name = 'doeagora/excluir.html'
+    model = models.Instituicao
+    success_url = reverse_lazy("doeagora:verlistageminstituicao")
+ 
+class ExcluirDoadorView(generic.DeleteView):
+    template_name = 'doeagora/excluir.html'
+    model = models.Doador
+    success_url = reverse_lazy("doeagora:verlistagemdoador")

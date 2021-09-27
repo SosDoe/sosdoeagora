@@ -1,2 +1,3 @@
 {{ beneficiario.nome }} ---> {{ beneficiario.cpf }}
 <a href="{% url 'doeagora:editar_beneficiario' beneficiario.pk %}"> Editar </a>
+<a href="{% url 'doeagora:excluir_beneficiario' beneficiario.pk %}"> Excluir </a>

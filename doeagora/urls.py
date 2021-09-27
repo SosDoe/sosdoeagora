@@ -23,4 +23,8 @@ urlpatterns = [
     path('editar-beneficiario/<int:pk>', views.EditarBeneficiarioView.as_view(), name='editar_beneficiario'),
     path('editar-instituicao/<int:pk>', views.EditarInstituicaoView.as_view(), name='editar_instituicao'),
     path('editar-doadores/<int:pk>', views.EditarDoadorView.as_view(), name='editar_doador'),
+    path('excluir-beneficiario/<int:pk>', views.ExcluirBeneficiarioView.as_view(), name='excluir_beneficiario'),
+    path('excluir-instituicao/<int:pk>', views.ExcluirInstituicaoView.as_view(), name='excluir_instituicao'),
+    path('excluir-doadores/<int:pk>', views.ExcluirDoadorView.as_view(), name='excluir_doador'),
+    
 ]
