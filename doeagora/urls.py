@@ -20,4 +20,7 @@ urlpatterns = [
     path('listagem-doadores', views.VerListagemDoadorView.as_view(), name='verlistagemdoador'),
     path('listagem-beneficiarios', views.VerListagemBeneficiarioView.as_view(), name='verlistagembeneficiario'),
     path('listagem-instituicoes', views.VerListagemInstituicaoView.as_view(), name='verlistageminstituicao'),
+    path('editar-beneficiario/<int:pk>', views.EditarBeneficiarioView.as_view(), name='editar_beneficiario'),
+    path('editar-instituicao/<int:pk>', views.EditarInstituicaoView.as_view(), name='editar_instituicao'),
+    path('editar-doadores/<int:pk>', views.EditarDoadorView.as_view(), name='editar_doador'),
 ]

@@ -1,1 +1,2 @@
-l{{ instituicao.nome }} ---> {{ instituicao.email }}
+{{ instituicao.nome }} ---> {{ instituicao.email }}
+<a href="{% url 'doeagora:editar_instituicao' instituicao.pk %}"> Editar </a>
