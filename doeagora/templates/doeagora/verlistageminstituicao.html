@@ -7,6 +7,7 @@
   <body>
     <h1 class="sos">SOS-Doe Agora</h1>
 
+
 {% for instituicao in instituicoes %}
 <p><a href="{% url 'doeagora:ver_instituicao'  instituicao.pk %}">{{ instituicao }}</a></p>
 {% endfor %}

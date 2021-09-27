@@ -10,7 +10,8 @@
 <h2>
 
     {{ instituicao.nome }} ---> {{ instituicao.email }}
-    <p><a href="{% url 'doeagora:editar_instituicao' instituicao.pk %}" > Editar </a></p>
-    <p><a href="{% url 'doeagora:excluir_instituicao' instituicao.pk %}"> Excluir </a></p>
+    <p><a href="{% url 'doeagora:editar_instituicao' instituicao.pk %}" class="link3" > Editar </a></p>
+    <p><a href="{% url 'doeagora:excluir_instituicao' instituicao.pk %}" class="link3"> Excluir </a></p>
+    
 
 </h2>
