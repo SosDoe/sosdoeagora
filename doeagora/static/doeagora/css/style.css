@@ -12,7 +12,7 @@ body{
     text-align: center;
     font: outline;
   }
-  .listagens{
+  h2{
     color: white;
     width: 100%;
     text-align: center;
@@ -22,6 +22,7 @@ body{
     background: #000000bf;
     font-size: 180%;
   }
+
   h1 {
     color: white;
     width: 100%;
