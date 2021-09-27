@@ -12,15 +12,12 @@ body{
     text-align: center;
     font: outline;
   }
-  h2{
+  .listagens{
+    background: #0000006b;
     color: white;
     width: 100%;
-    text-align: center;
-    text-indent: 10px;
-    margin: 20px;
-    font-family: fangsong;
-    background: #000000bf;
-    font-size: 180%;
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif;
   }
 
   h1 {
