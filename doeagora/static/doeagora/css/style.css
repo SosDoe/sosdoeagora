@@ -83,6 +83,10 @@ body{
    
   }
 
+  .lists {
+    color: white;
+  }
+
   .login{ 
     background: url(/static/doeagora/img/doacao.jpeg);
     background-size: 1400px 1200px;
