@@ -21,7 +21,7 @@ body{
     font: outline;
   }
   .listagens{
-    background: #0000006b;
+    background: url(/static/doeagora/img/generosidade.jpeg);
     color: white;
     width: 100%;
     text-align: center; 
