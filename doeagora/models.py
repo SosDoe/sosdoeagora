@@ -57,7 +57,7 @@ class Beneficiario(models.Model):
 
 class Doacao(models.Model):
   quantidade = models.IntegerField()
-  data_doacao = models.DateField(verbose_name="data da doação")
+  data = models.DateField(verbose_name="data da doação")
   doador = models.ForeignKey(Doador, on_delete=models.PROTECT)
   produto = models.ForeignKey(Produto, on_delete=models.PROTECT)
   instituicao = models.ForeignKey(Instituicao, on_delete=models.PROTECT)
