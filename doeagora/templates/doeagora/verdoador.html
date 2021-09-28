@@ -11,8 +11,10 @@
 
     {{ doador.nome }} ---> {{ doador.cpf }}
 
-    </h3>
+    <p><a href="{% url 'doeagora:editar_doador' doador.pk %}" class="link1" > Editar </a></p>
+    <p><a href="{% url 'doeagora:excluir_doador' doador.pk %}" class="link1"> Excluir </a></p>
     
-<p><a href="{% url 'doeagora:editar_doador' doador.pk %}" class="link1" > Editar </a></p>
-<p><a href="{% url 'doeagora:excluir_doador' doador.pk %}" class="link1"> Excluir </a></p>
+
+
+    </h3>
     
