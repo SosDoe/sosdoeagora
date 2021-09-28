@@ -7,9 +7,12 @@
   <body>
     <h1 class="sos">SOS-Doe Agora</h1>
 
+    <h3 class="cd">
+
   {% for doador in doadores %}
-  <p><a href="{% url 'doeagora:ver_doador'  doador.pk %}">{{ doador }}</a></p>
+  <p><a href="{% url 'doeagora:ver_doador'  doador.pk %}" class= "link2">{{ doador }}</a></p>
   {% endfor %}
+    </h3>
 
 <p><a href="{% url "doeagora:listagem" %}" class="link1"> Volte a página de listagens </a></p>
 <p><a href="{% url "doeagora:index" %}" class="link1"> Volte a página inicial </a></p>
