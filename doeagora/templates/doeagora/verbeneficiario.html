@@ -7,7 +7,11 @@
   <body>
     <h1 class="sos">SOS-Doe Agora</h1>
     
-{{ beneficiario.nome }} ---> {{ beneficiario.cpf }}
+    <h3 class="cd">
+
+    {{ beneficiario.nome }} ---> {{ beneficiario.cpf }}
+
+    </h3>
 
 <p><a href="{% url 'doeagora:editar_beneficiario' beneficiario.pk %}" class="link1" > Editar </a></p>
 <p><a href="{% url 'doeagora:excluir_beneficiario' beneficiario.pk %}" class="link1"> Excluir </a></p>
