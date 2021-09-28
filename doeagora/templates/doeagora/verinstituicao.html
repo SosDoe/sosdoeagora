@@ -7,11 +7,8 @@
   <body>
     <h1 class="listagens">SOS-Doe Agora</h1>
 
-<h2 class="editlist">
 
-  {{ instituicao.nome }} ---> {{ instituicao.email }}
-
-</h2>
+{{ instituicao.nome }} ---> {{ instituicao.email }}
 
 <p><a href="{% url 'doeagora:editar_instituicao' instituicao.pk %}" class="link1" > Editar </a></p>
 <p><a href="{% url 'doeagora:excluir_instituicao' instituicao.pk %}" class="link1"> Excluir </a></p>

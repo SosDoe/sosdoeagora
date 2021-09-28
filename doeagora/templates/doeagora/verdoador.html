@@ -8,5 +8,7 @@
     <h1 class="sos">SOS-Doe Agora</h1>
     
 {{ doador.nome }} ---> {{ doador.cpf }}
-<a href="{% url 'doeagora:editar_doador' doador.pk %}"> Editar </a>
-<a href="{% url 'doeagora:excluir_doador' doador.pk %}"> Excluir </a>
+
+<p><a href="{% url 'doeagora:editar_instituicao' instituicao.pk %}" class="link1" > Editar </a></p>
+<p><a href="{% url 'doeagora:excluir_instituicao' instituicao.pk %}" class="link1"> Excluir </a></p>
+    
