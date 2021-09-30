@@ -25,6 +25,10 @@ body{
   
   }
   
+  .sosdoeinfo {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
   .sos {
     background: #0000006b;
     color: white;
