@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.contrib.auth import authenticate
 
 user = User.objects.create_user('john', 'lennon@thebeatles.com', 'johnpassword')
 user.last_name = 'Lennon'
@@ -8,6 +9,14 @@ user.save()
 u = User.objects.get(username='john')
 u.set_password('new password')
 u.save()
+
+user = authenticate(username='john', password='secret')
+if user is not None:
+    # A backend authenticated the credentials
+else:
+    # No backend authenticated the credentials
+
+
 
 class Doador(models.Model): 
     nome = models.CharField(max_length=40)
