@@ -5,6 +5,10 @@ user = User.objects.create_user('john', 'lennon@thebeatles.com', 'johnpassword')
 user.last_name = 'Lennon'
 user.save()
 
+u = User.objects.get(username='john')
+u.set_password('new password')
+u.save()
+
 class Doador(models.Model): 
     nome = models.CharField(max_length=40)
     telefone = models.CharField(max_length=11)
