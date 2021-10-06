@@ -1,10 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.contrib.auth.mixins import LoginRequiredMixin
-
-class MyView(LoginRequiredMixin, View):
-    login_url = '/login/'
-    redirect_field_name = 'redirect_to'
 
 class Doador(models.Model): 
     nome = models.CharField(max_length=40)
