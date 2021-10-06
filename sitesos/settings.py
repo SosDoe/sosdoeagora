@@ -131,3 +131,5 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = '/home/sosdoeagora/sitesos/static'
 STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = "doeagora:dpsdologin"
+
+
