@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['sosdoeagora.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'django.contrib.auth'
     'doeagora.apps.DoeagoraConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,7 +42,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-     'django.contrib.auth'
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
