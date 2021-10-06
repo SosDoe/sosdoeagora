@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="{% static 'doeagora/css/style.css' %}">
+   <script src="script.js"></script>  
+  <head>
+  <body>
+    <h1 class="sos">SOS-DoeAgora</h1>
+
+    <h3> 
+      <p>
+        <a href="{% url "doeagora:listagem" %}" class="link1"> Listagem </a><br>
+      <p> 
+      <a href="{% url "doeagora:index" %}" class="link1"> Volte aqui para página inicial </a><br>
+      
+      </p>
+    </h3>
+    
+  </body>
+</html>
