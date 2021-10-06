@@ -1,9 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate
-from myapp.models import BlogPost
-from django.contrib.auth.models import Permission
-from django.contrib.contenttypes.models import ContentType
 
 class Doador(models.Model): 
     nome = models.CharField(max_length=40)
@@ -12,30 +8,11 @@ class Doador(models.Model):
     cpf = models.CharField(max_length=11, verbose_name="CPF")
     email = models.CharField(max_length=40)
     usuario = models.ForeignKey(User, verbose_name="usuário", on_delete=models.PROTECT, null=True)
-    user = User.objects.create_user('doador', 'doador@gmail.com', 'doadorpassword')
-    user.last_name = 'Doador'
-    user.save()
-
-    u = User.objects.get(username='john')
-    u.set_password('new password')
-    u.save()
-
-    user = authenticate(username='john', password='secret')
-    if user is not None:
-        # A backend authenticated the credentials
-    else:
-        # No backend authenticated the credentials
         
     class Meta:
         verbose_name = "Doador"
         verbose_name_plural = "Doadores"
-        content_type = ContentType.objects.get_for_model(BlogPost)
-        permission = Permission.objects.create(
-        codename='can_publish',
-        name='Can Publish Posts',
-        content_type=content_type,
-        )
-    
+
     def __str__(self):
         return self.nome
   
@@ -46,29 +23,10 @@ class Instituicao(models.Model):
     email = models.CharField(max_length=40)
     telefone = models.CharField(max_length=11)
     usuario = models.ForeignKey(User, verbose_name="usuário", on_delete=models.PROTECT, null=True)
-    user = User.objects.create_user('doador', 'doador@gmail.com', 'doadorpassword')
-    user.last_name = 'Doador'
-    user.save()
-
-    u = User.objects.get(username='john')
-    u.set_password('new password')
-    u.save()
-
-    user = authenticate(username='john', password='secret')
-    if user is not None:
-        # A backend authenticated the credentials
-    else:
-        # No backend authenticated the credentials
     
     class Meta:
         verbose_name = "Instituição"
         verbose_name_plural = "Instituições"
-        content_type = ContentType.objects.get_for_model(BlogPost)
-        permission = Permission.objects.create(
-        codename='can_publish',
-        name='Can Publish Posts',
-        content_type=content_type,
-        )
 
     def __str__(self):
         return self.nome
@@ -92,29 +50,10 @@ class Beneficiario(models.Model):
     cpf = models.CharField(max_length=11, verbose_name="CPF")
     instituicao = models.ForeignKey(Instituicao, verbose_name="instituição", on_delete=models.PROTECT)
     usuario = models.ForeignKey(User, verbose_name="usuário", on_delete=models.PROTECT, null=True)
-    user = User.objects.create_user('doador', 'doador@gmail.com', 'doadorpassword')
-    user.last_name = 'Doador'
-    user.save()
-
-    u = User.objects.get(username='john')
-    u.set_password('new password')
-    u.save()
-
-    user = authenticate(username='john', password='secret')
-    if user is not None:
-        # A backend authenticated the credentials
-    else:
-        # No backend authenticated the credentials
 
     class Meta:
         verbose_name = "Beneficiário"
         verbose_name_plural = "Beneficiários"
-        content_type = ContentType.objects.get_for_model(BlogPost)
-        permission = Permission.objects.create(
-        codename='can_publish',
-        name='Can Publish Posts',
-        content_type=content_type,
-        )
 
     def __str__(self):
         return self.nome
