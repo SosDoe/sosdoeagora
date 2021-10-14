@@ -160,3 +160,8 @@ class ExcluirDoacaoBeneficiarioView(generic.DeleteView):
     template_name = 'doeagora/excluir.html'
     model = models.DoacaoBeneficiario
     success_url = reverse_lazy("doeagora:index")
+   
+class ExcluirInteresseView(generic.DeleteView):
+    template_name = 'doeagora/excluir.html'
+    model = models.Interesse
+    success_url = reverse_lazy("doeagora:index")
