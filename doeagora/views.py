@@ -63,6 +63,11 @@ class VerDoadorView(generic.DetailView):
     template_name = 'doeagora/verdoador.html'
     model = models.Doador
     context_name = 'doador'
+  
+class VerInteresseView(generic.DetailView):
+    template_name = 'doeagora/verinteresses.html'
+    model = models.Interesse
+    context_name = 'interesse'
     
 class VerListagemBeneficiarioView(generic.ListView):
     template_name = 'doeagora/verlistagembeneficiario.html'
@@ -78,6 +83,11 @@ class VerListagemInstituicaoView(generic.ListView):
     template_name = 'doeagora/verlistageminstituicao.html'
     model = models.Instituicao
     context_object_name = 'instituicoes'
+ 
+class VerListagemInteresseView(generic.ListView):
+    template_name = 'doeagora/verlistageminteresses.html'
+    model = models.Interesse
+    context_object_name = 'interesses'
     
 class EditarBeneficiarioView(generic.UpdateView):
     template_name = 'doeagora/c.beneficiario.html'
@@ -96,6 +106,12 @@ class EditarDoadorView(generic.UpdateView):
     model = models.Doador
     fields = ("nome", "telefone", "email", "endereco", "cpf")
     success_url = reverse_lazy("doeagora:verlistagemdoador")
+  
+class EditarInteresseView(generic.UpdateView):
+    template_name = 'doeagora/c.doadores.html'
+    model = models.Interesse
+    fields = ("produto", "quantidade", "beneficiario")
+    success_url = reverse_lazy("doeagora:index")
 
 class ExcluirBeneficiarioView(generic.DeleteView):
     template_name = 'doeagora/excluir.html'
@@ -111,3 +127,8 @@ class ExcluirDoadorView(generic.DeleteView):
     template_name = 'doeagora/excluir.html'
     model = models.Doador
     success_url = reverse_lazy("doeagora:verlistagemdoador")
+ 
+class ExcluirInteresseView(generic.DeleteView):
+    template_name = 'doeagora/excluir.html'
+    model = models.Interesse
+    success_url = reverse_lazy("doeagora:index")
