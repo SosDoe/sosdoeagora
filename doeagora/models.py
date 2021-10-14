@@ -70,5 +70,28 @@ class Doacao(models.Model):
     class Meta:
         verbose_name = "Doação"
         verbose_name_plural = "Doações"
+        
+class DoacaoBeneficiario(models.Model):
+    quantidade = models.IntegerField()
+    data = models.DateField(verbose_name="data da doação", auto_now_add=True)
+    beneficiario = models.ForeignKey(Beneficiario, on_delete=models.PROTECT)
+    produto = models.ForeignKey(Produto, on_delete=models.PROTECT)
+    instituicao = models.ForeignKey(Instituicao, on_delete=models.PROTECT)
+    usuario = models.ForeignKey(User, verbose_name="usuário", on_delete=models.PROTECT, null=True)
+
+    class Meta:
+        verbose_name = "Doação para Beneficiario"
+        verbose_name_plural = "Doações para Beneficiarios"
+    
+class Interesse(models.Model):
+    quantidade = models.IntegerField()
+    data = models.DateField(verbose_name="data da doação", auto_now_add=True)
+    beneficiario = models.ForeignKey(Beneficiario, on_delete=models.PROTECT)
+    produto = models.ForeignKey(Produto, on_delete=models.PROTECT)
+    usuario = models.ForeignKey(User, verbose_name="usuário", on_delete=models.PROTECT, null=True)
+
+    class Meta:
+        verbose_name = "Interesse"
+        verbose_name_plural = "Interesses"
 
 
