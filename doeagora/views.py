@@ -130,7 +130,7 @@ class EditarDoadorView(generic.UpdateView):
     success_url = reverse_lazy("doeagora:verlistagemdoador")
   
 class EditarInteresseView(generic.UpdateView):
-    template_name = 'doeagora/c.doadores.html'
+    template_name = 'doeagora/interesse.html'
     model = models.Interesse
     fields = ("produto", "quantidade", "beneficiario")
     success_url = reverse_lazy("doeagora:index")
