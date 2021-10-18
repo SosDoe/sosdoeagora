@@ -1,26 +1,13 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="{% static 'doeagora/css/style.css' %}">
+   <script src="script.js"></script>  
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>SOS-DoeAgora</title>
-    <link rel="stylesheet" href="{% static 'doeagora/css/style.css' %}">
-    <script src="script.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  </head>
+  <body>
+    <h1 class="sos">SOS-DoeAgora</h1>
 
-  <body class="beneficiario">
-
-     <div class="container">
-      <hr>
-      <h2>Cadastro de Doaçoes<cadastro></cadastro></h2>
-<form action="" method="post">
-    {% csrf_token %}
-    {{ form.as_ul }}
-    <input type="submit" value="Enviar">   
-</form>
-
-<p><a href="{% url "doeagora:index" %}" class="link1"> Volte a página inicial </a></p>
-
-<p><a href="{% url "doeagora:sobrecadastros" %}" class="link1"> Volte a página de cadastros </a></p>
+      <a href="{% url "doeagora:index" %}" class="link1"> Volte para a página inicial</a><br>
+    
+  </body>
+</html>
