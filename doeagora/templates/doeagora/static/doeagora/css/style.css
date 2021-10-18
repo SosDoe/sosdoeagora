@@ -1,5 +1,5 @@
 body{
-    background: url(img/foto_inicial);
+    background: blue;
     line-height: 1.0;
     width: 160%;
     margin: auto;
@@ -7,7 +7,7 @@ body{
   }
   
   .cadastros{
-    background: url(img/foto_inicial);
+    background: green;
     text-align: center;
     font: outline;
   
@@ -44,7 +44,7 @@ body{
   }
   
   .doadores {
-    background: url(img/generosidade);
+    background: yellow;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -53,7 +53,7 @@ body{
     
   }
   .instituicao {
-    background: url(img/generosidade);
+    background: purple;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -63,7 +63,7 @@ body{
   }
   
   .beneficiario{
-    background: url(img/generosidade);
+    background: pink;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
