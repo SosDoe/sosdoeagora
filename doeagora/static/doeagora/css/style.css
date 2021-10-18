@@ -1,5 +1,5 @@
 body{
-    background: url(/static/doeagora/img/foto_inicial.jpeg);
+    background: white;
     line-height: 1.0;
     width: 90%;
     margin: auto;
@@ -16,12 +16,12 @@ body{
 
   }
   .cadastros{
-    background: url(img/foto_inicial.jpeg);
+    background: ;
     text-align: center;
     font: outline;
   }
   .listagens{
-    background: url(/static/doeagora/img/generosidade.jpeg);
+    background: ;
     color: white;
     width: 100%;
     text-align: center; 
@@ -55,7 +55,7 @@ body{
   }
   
   .doadores {
-    background: url(/static/doeagora/img/generosidade.jpeg);
+    background: ;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -64,7 +64,7 @@ body{
     
   }
   .instituicao {
-    background: url(/static/doeagora/img/generosidade.jpeg);
+    background: ;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -74,7 +74,7 @@ body{
   }
   
   .beneficiario{
-    background: url(/static/doeagora/img/generosidade.jpeg);
+    background: ;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -83,7 +83,7 @@ body{
   }
 
   .login{ 
-    background: url(/static/doeagora/img/doacao.jpeg);
+    background: ;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
