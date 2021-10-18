@@ -77,12 +77,12 @@ class VerDoadorView(generic.DetailView):
     context_name = 'doador'
   
 class VerInteresseView(generic.DetailView):
-    template_name = 'doeagora/verinteresses.html'
+    template_name = 'doeagora/verinteresse.html'
     model = models.Interesse
     context_name = 'interesse'
    
 class VerDoacaoBeneficiarioView(generic.DetailView):
-    template_name = 'doeagora/verinteresses.html'
+    template_name = 'doeagora/verinteresse.html'
     model = models.DoacaoBeneficiario
     context_name = 'doacao'
     
@@ -102,7 +102,7 @@ class VerListagemInstituicaoView(generic.ListView):
     context_object_name = 'instituicoes'
  
 class VerListagemInteresseView(generic.ListView):
-    template_name = 'doeagora/verlistageminteresses.html'
+    template_name = 'doeagora/verlistageminteresse.html'
     model = models.Interesse
     context_object_name = 'interesses'
    
