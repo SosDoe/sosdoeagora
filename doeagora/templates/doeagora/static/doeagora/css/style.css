@@ -7,12 +7,14 @@ body{
   }
   
   .cadastros{
+    background: rgb(164, 164, 255);
     text-align: center;
     font: outline;
   
   }
   
   h1 {
+    background: rgb(164, 164, 255);
     color: white;
     width: 100%;
     text-align: center;
@@ -25,6 +27,7 @@ body{
   }
   
   .sosdoeinfo {
+    background: rgb(164, 164, 255);
     color: white;
     font-family: 'Times New Roman', Times, serif;
   }
@@ -37,10 +40,12 @@ body{
   }
   
   .social {
+    background: rgb(164, 164, 255);
     text-align: left;
   }
   
   .doadores {
+    background: rgb(164, 164, 255);
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -49,7 +54,7 @@ body{
     
   }
   .instituicao {
-
+    background: rgb(164, 164, 255);
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -59,7 +64,7 @@ body{
   }
   
   .beneficiario{
-
+    background: rgb(164, 164, 255);
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
