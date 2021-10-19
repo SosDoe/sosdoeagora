@@ -151,6 +151,12 @@ class EditarDoacaoBeneficiarioView(generic.UpdateView):
     fields = ("produto", "quantidade", "beneficiario", "instituicao")
     success_url = reverse_lazy("doeagora:index")
 
+class EditarDoacaoView(generic.UpdateView):
+    template_name = 'doeagora/doacao.html'
+    model = models.Doacao
+    fields = ("produto", "quantidade")
+    success_url = reverse_lazy("doeagora:index")
+
 class ExcluirBeneficiarioView(generic.DeleteView):
     template_name = 'doeagora/excluir.html'
     model = models.Beneficiario
