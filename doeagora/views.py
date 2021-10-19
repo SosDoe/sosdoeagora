@@ -92,7 +92,7 @@ class VerDoacaoBeneficiarioView(generic.DetailView):
     context_name = 'doacao'
 
 class VerListagemDoacaoView(generic.ListView):
-    template_name = 'doeagora/verlisdoacao.html'
+    template_name = 'doeagora/verlistagemdoacao.html'
     model = models.Doacao
     context_object_name = 'doacoes'
 
