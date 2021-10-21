@@ -9,9 +9,9 @@
 
     <h3 class="cd">
 
-    {{ doador.nome }} ---> {{ doador.cpf}}
-    {{ doacao.nome }} ---> {{ doador.quantidade}}
+    {{ doador.nome }} ---> {{ doador.cpf}} ---> {{ doacao.nome }} ---> {{ doador.quantidade}}
 
+    
     <p><a href="{% url 'doeagora:editar_doacao' doacao.pk %}" class="link1" > Editar </a></p>
     <p><a href="{% url 'doeagora:excluir_doacao' doacao.pk %}" class="link1"> Excluir </a></p>
   
