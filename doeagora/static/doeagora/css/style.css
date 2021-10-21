@@ -1,5 +1,5 @@
 body{
-    background: rgb(135, 135, 255);
+    background: blue;
     line-height: 1.0;
     width: 90%;
     margin: auto;
@@ -10,18 +10,18 @@ body{
   .editlist {
     color:white;
     text-align: center;
-    background: #0000006b;
+    background: blue;
     width: 80%;
     font-family: 'Times New Roman', Times, serif;
 
   }
   .cadastros{
-    background: ;
+    background: blue ;
     text-align: center;
     font: outline;
   }
   .listagens{
-    background: ;
+    background: blue ;
     color: white;
     width: 100%;
     text-align: center; 
@@ -55,7 +55,7 @@ body{
   }
   
   .doadores {
-    background: ;
+    background: blue;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -64,7 +64,7 @@ body{
     
   }
   .instituicao {
-    background: ;
+    background: blue ;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -74,7 +74,7 @@ body{
   }
   
   .beneficiario{
-    background: ;
+    background: blue;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -83,7 +83,7 @@ body{
   }
 
   .login{ 
-    background: ;
+    background:blue ;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
