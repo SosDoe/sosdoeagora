@@ -8,7 +8,7 @@ body{
   }
   
   .editlist {
-    color:white;
+    color: black;
     text-align: center;
     background: blue;
     width: 80%;
@@ -22,14 +22,14 @@ body{
   }
   .listagens{
     background: blue ;
-    color: white;
+    color: black;
     width: 100%;
     text-align: center; 
     font-family: 'Times New Roman', Times, serif;
   }
 
   h1 {
-    color: white;
+    color: black;
     width: 100%;
     text-align: center;
     text-indent: 10px;
@@ -40,11 +40,11 @@ body{
   }
   
   .txt{
-    color: white;
+    color: black;
   }
   .sos {
     background: #0000006b;
-    color: white;
+    color: black;
     width: 100%;
     text-align: center; 
     font-family: 'Times New Roman', Times, serif;
@@ -96,7 +96,7 @@ body{
   }
   
   .link1 {
-    color: white;
+    color: black;
     font-size: 90%;
     background: #0000006b;
     text-align: center;
@@ -104,7 +104,7 @@ body{
   }
   
   .link2 {
-  color: white;
+  color: black;
   font-size: 100%;
   background: #24ff9a6b;
   font-family: OCR A Std, monospace; 
@@ -112,7 +112,7 @@ body{
   
   .link3 {
   
-  color: white;
+  color: black;
   font-size: 100%;
   font-family: cursive; 
   background: #000000fa;
@@ -130,7 +130,7 @@ body{
   }
   
   .fim{
-    color: white;
+    color: black;
     background: #000000bd;
     text-align: center;
     margin: auto;
