@@ -1,5 +1,5 @@
 body{
-    background: blue;
+    background: yellow;
     line-height: 1.0;
     width: 90%;
     margin: auto;
@@ -10,18 +10,18 @@ body{
   .editlist {
     color: black;
     text-align: center;
-    background: blue;
+    background: yellow;
     width: 80%;
     font-family: 'Times New Roman', Times, serif;
 
   }
   .cadastros{
-    background: blue ;
+    background: yellow;
     text-align: center;
     font: outline;
   }
   .listagens{
-    background: blue ;
+    background: yellow;
     color: black;
     width: 100%;
     text-align: center; 
@@ -43,19 +43,19 @@ body{
     color: black;
   }
   .sos {
-    background: #0000006b;
+    background: yelow;
     color: black;
     width: 100%;
     text-align: center; 
     font-family: 'Times New Roman', Times, serif;
   }
   .social {
-    background: url(img/fim);
+    background: yellow;
     
   }
   
   .doadores {
-    background: blue;
+    background: yellow;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -64,7 +64,7 @@ body{
     
   }
   .instituicao {
-    background: blue ;
+    background: yellow;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -74,7 +74,7 @@ body{
   }
   
   .beneficiario{
-    background: blue;
+    background: yellow;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -83,7 +83,7 @@ body{
   }
 
   .login{ 
-    background:blue ;
+    background: yellow;
     background-size: 1400px 1200px;
     font-weight: 900;
     color: black;
@@ -98,7 +98,7 @@ body{
   .link1 {
     color: black;
     font-size: 90%;
-    background: #0000006b;
+    background: yellow;
     text-align: center;
     font-family: OCR A Std, monospace;
   }
@@ -106,7 +106,7 @@ body{
   .link2 {
   color: black;
   font-size: 100%;
-  background: #24ff9a6b;
+  background: yellow;
   font-family: OCR A Std, monospace; 
   }
   
@@ -115,14 +115,14 @@ body{
   color: black;
   font-size: 100%;
   font-family: cursive; 
-  background: #000000fa;
+  background: yellow;
   
   }
   
   .cd{
     color: white;
     width: 100%;
-    background: #000000bd;
+    background: yellow;
     text-align: center;
     font-size: 130%;
     font-family: OCR A Std, monospace; 
@@ -131,7 +131,7 @@ body{
   
   .fim{
     color: black;
-    background: #000000bd;
+    background: yellow;
     text-align: center;
     margin: auto;
     position:absolute;
