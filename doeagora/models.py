@@ -7,8 +7,7 @@ class Doador(models.Model):
     endereco = models.CharField(max_length=100, verbose_name="endereço" )
     cpf = models.CharField(max_length=11, verbose_name="CPF")
     email = models.CharField(max_length=40)
-    usuario = models.ForeignKey(User, verbose_name="usuário", on_delete=models.PROTECT, null=True)
-        
+       
     class Meta:
         verbose_name = "Doador"
         verbose_name_plural = "Doadores"
@@ -22,8 +21,7 @@ class Instituicao(models.Model):
     endereco = models.CharField(max_length=100, verbose_name="endereço" )
     email = models.CharField(max_length=40)
     telefone = models.CharField(max_length=11)
-    usuario = models.ForeignKey(User, verbose_name="usuário", on_delete=models.PROTECT, null=True)
-    
+   
     class Meta:
         verbose_name = "Instituição"
         verbose_name_plural = "Instituições"
@@ -49,8 +47,7 @@ class Beneficiario(models.Model):
     endereco = models.CharField(max_length=100, verbose_name="endereço" )
     cpf = models.CharField(max_length=11, verbose_name="CPF")
     instituicao = models.ForeignKey(Instituicao, verbose_name="instituição", on_delete=models.PROTECT)
-    usuario = models.ForeignKey(User, verbose_name="usuário", on_delete=models.PROTECT, null=True)
-
+ 
     class Meta:
         verbose_name = "Beneficiário"
         verbose_name_plural = "Beneficiários"
@@ -65,8 +62,7 @@ class Doacao(models.Model):
     doador = models.ForeignKey(Doador, on_delete=models.PROTECT)
     produto = models.ForeignKey(Produto, on_delete=models.PROTECT)
     instituicao = models.ForeignKey(Instituicao, on_delete=models.PROTECT)
-    usuario = models.ForeignKey(User, verbose_name="usuário", on_delete=models.PROTECT, null=True)
-
+ 
     class Meta:
         verbose_name = "Doação"
         verbose_name_plural = "Doações"
@@ -77,8 +73,7 @@ class DoacaoBeneficiario(models.Model):
     beneficiario = models.ForeignKey(Beneficiario, on_delete=models.PROTECT)
     produto = models.ForeignKey(Produto, on_delete=models.PROTECT)
     instituicao = models.ForeignKey(Instituicao, on_delete=models.PROTECT)
-    usuario = models.ForeignKey(User, verbose_name="usuário", on_delete=models.PROTECT, null=True)
-
+ 
     class Meta:
         verbose_name = "Doação para Beneficiario"
         verbose_name_plural = "Doações para Beneficiarios"
@@ -88,7 +83,6 @@ class Interesse(models.Model):
     data = models.DateField(verbose_name="data da doação", auto_now_add=True)
     beneficiario = models.ForeignKey(Beneficiario, on_delete=models.PROTECT)
     produto = models.ForeignKey(Produto, on_delete=models.PROTECT)
-    usuario = models.ForeignKey(User, verbose_name="usuário", on_delete=models.PROTECT, null=True)
 
     class Meta:
         verbose_name = "Interesse"

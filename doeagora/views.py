@@ -56,10 +56,6 @@ class DoacaoView(generic.CreateView):
 class FimParaBeneficiadosView(generic.TemplateView):
     template_name = 'doeagora/fim_beneficiados.html'
     
-
-class LoginView(generic.TemplateView):
-    template_name = 'doeagora/login.html'
-    
  
 class VerBeneficiarioView(generic.DetailView):
     template_name = 'doeagora/verbeneficiario.html'
