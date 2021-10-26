@@ -10,7 +10,7 @@
     <h3 class="cd">
 
   {% for doacao in doacoes %}
-  <p><a href="{% url 'doeagora:ver_doacao'  doacao.pk %}" class= "link2">{{ doacao }}</a></p>
+  <p><a href="{% url 'doeagora:ver_doacao'  doacao.pk %}" class= "link2">{{ doacao.produto }} {{doacao.doador}}</a></p>
   {% endfor %}
     </h3>
 
