@@ -7,6 +7,15 @@
   <body>
     <h1 class="sos">SOS-DoeAgora</h1>
 
+    {{ doacao.produto }} ---> {{ beneficiario.nome }}
+
+    <p><a href="{% url 'doeagora:editar_doador' doador.pk %}" class="link1" > Editar </a></p>
+    <p><a href="{% url 'doeagora:excluir_doador' doador.pk %}" class="link1"> Excluir </a></p>
+    
+    </h3>
+
+<p><a href="{% url "doeagora:listagem" %}" class="link1"> Volte a página de listagens </a></p>
+<p><a href="{% url "doeagora:index" %}" class="link1"> Volte a página inicial </a></p>
       <a href="{% url "doeagora:index" %}" class="link1"> Volte para página inicial </a><br>
     
   </body>
