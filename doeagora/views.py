@@ -60,32 +60,32 @@ class FimParaBeneficiadosView(generic.TemplateView):
 class VerBeneficiarioView(generic.DetailView):
     template_name = 'doeagora/verbeneficiario.html'
     model = models.Beneficiario
-    context_name = 'beneficiario'
+    context_object_name = 'beneficiario'
  
 class VerDoacaoView(generic.DetailView):
     template_name = 'doeagora/verdoacao.html'
     model = models.Doacao
-    context_name = 'doacao'
+    context_object_name = 'doacao'
 
 class VerInstituicaoView(generic.DetailView):
     template_name = 'doeagora/verinstituicao.html'
     model = models.Instituicao
-    context_name = 'instituicao'
+    context_object_name = 'instituicao'
 
 class VerDoadorView(generic.DetailView):
     template_name = 'doeagora/verdoador.html'
     model = models.Doador
-    context_name = 'doador'
+    context_object_name = 'doador'
   
 class VerInteresseView(generic.DetailView):
     template_name = 'doeagora/verinteresse.html'
     model = models.Interesse
-    context_name = 'interesse'
+    context_object_name = 'interesse'
    
 class VerDoacaoBeneficiarioView(generic.DetailView):
     template_name = 'doeagora/verdoacaobeneficiario.html'
     model = models.DoacaoBeneficiario
-    context_name = 'doacao'
+    context_object_name = 'doacao'
 
 class VerListagemDoacaoView(generic.ListView):
     template_name = 'doeagora/verlistagemdoacao.html'
