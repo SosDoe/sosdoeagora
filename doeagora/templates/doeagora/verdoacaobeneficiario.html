@@ -9,8 +9,8 @@
 
     {{ doacao.produto }} ---> {{ doacao.beneficiario.nome }}
 
-    {# <p><a href="{% url 'doeagora:editar_doacao_beneficiario' doacao.pk %}" class="link1" > Editar </a></p> #}
-    {# <p><a href="{% url 'doeagora:excluir_doacao_beneficiario' doacao.pk %}" class="link1"> Excluir </a></p> #}
+    <p><a href="{% url 'doeagora:editar_doacao_beneficiario' doacao.pk %}" class="link1" > Editar </a></p>
+    <p><a href="{% url 'doeagora:excluir_doacao_beneficiario' doacao.pk %}" class="link1"> Excluir </a></p>
     
     </h3>
 
