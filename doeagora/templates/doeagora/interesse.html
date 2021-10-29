@@ -1,22 +1,26 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="{% static 'doeagora/css/style.css' %}">
-   <script src="script.js"></script>  
   <head>
-  <body>
-    <h1 class="sos">SOS-DoeAgora</h1>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SOS-DoeAgora</title>
+    <link rel="stylesheet" href="{% static 'doeagora/css/style.css' %}">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  </head>
 
-    <div class="container">
+  <body class="interesse">
+
+     <div class="container">
       <hr>
       <h2>Cadastro de Interesses<cadastro></cadastro></h2>
-<form action="" method="post" class="interesse">
+<form action="" method="post">
     {% csrf_token %}
     {{ form.as_ul }}
     <input type="submit" value="Enviar">   
 </form>
 
-<hr>
     Caso você deseje colocar outros produtos, clique aqui para retornar a página de cadastros:
     <p><a href="{% url "doeagora:sobrecadastros" %}" class="link1"> Volte a página de cadastros </a></p>
 
