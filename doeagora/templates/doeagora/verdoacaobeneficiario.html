@@ -1,21 +1,23 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="{% static 'doeagora/css/style.css' %}">
-   <script src="script.js"></script>  
+  <link rel="stylesheet" href="{% static 'doeagora/css/style.css' %}"> 
+   <script src="script.js"></script>
   <head>
   <body>
-    <h1 class="listagem">SOS-DoeAgora</h1>
+    <h1 class="listagens">SOS-Doe Agora</h1>
 
-    {{ doacao.produto }} ---> {{ doacao.beneficiario.nome }}
+    <h3 class="cd">
 
+  {{doacao.produto}} ---> {{doacao.doador.nome}}
+    
     <p><a href="{% url 'doeagora:editar_doacao_beneficiario' doacao.pk %}" class="link1" > Editar </a></p>
     <p><a href="{% url 'doeagora:excluir_doacao_beneficiario' doacao.pk %}" class="link1"> Excluir </a></p>
     
     </h3>
-
+    
 <p><a href="{% url "doeagora:listagem" %}" class="link1"> Volte a página de listagens </a></p>
 <p><a href="{% url "doeagora:index" %}" class="link1"> Volte a página inicial </a></p>
-    
+   
   </body>
 </html>
