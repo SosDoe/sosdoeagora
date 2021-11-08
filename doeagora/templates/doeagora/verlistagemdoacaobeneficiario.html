@@ -10,7 +10,9 @@
     <h3 class="cd">
       
    {% for doacao in doacoes %}
-   <p><a href="{% url 'doeagora:ver_doacao_beneficiario'  doacao.pk %}" class= "link2">{{ doacao.produto }} - {{doacao.beneficiario.nome}}</a></p>
+   <p><a href="{% url 'doeagora:ver_doacao_beneficiario'  doacao.pk %}" class= "link2">Doação: 
+     {{ doacao.produto }} | Beneficiário: {{doacao.beneficiario.nome}} | Quantidade: {{doacao.quantidade}}
+    </a></p>
    {% endfor %}
     </h3>
     <hr>
